@@ -1,3 +1,27 @@
 :root{
-    --colorVerde: 
+    --colorVerde: #1E3231;
+    --colorVerdeClaro: #347b3e;
+    --colorEscuro: #142221;
+
+}
+
+header{
+    background-color: var(--colorVerde);
+    max-width: 13.5vw;
+}
+
+.usuario{
+    /* display: flex;
+    justify-content: space-between; */
+}
+.imagemP{
+    width: 40px;
+    border-radius: 100px;
+}
+.icoPess{
+    background-color: var(--colorEscuro);
+    padding: 10px;
+}
+.icoP{
+    width: 100%;
 }
