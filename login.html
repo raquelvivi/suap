@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUAP</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="src/css/root.css">
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #002224;
+        background: linear-gradient(260deg, rgba(0, 34, 36, 1) 0%, rgba(10, 127, 112, 1) 100%);
+    }
+
+    .main {
+        display: flex;
+        margin: 4% 0% 4% 8%;
+        height: 70vh;
+    }
+
+    .markt {
+        border-left: var(--ciano) 3px solid;
+        padding: 0 3% 0 3%;
+    }
+
+    .text {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 100;
+        max-width: 30vw;
+
+    }
+</style>
+
+<body>
+
+    <section class="main">
+
+        <div class="markt">
+            <img src="src/imagens/suap_ifrn_logo.svg" alt="Logo ifrn">
+            <p class="text">Um software desenvolvido por uma instituição pública para instituições públicas.</p>
+            <img src="src/imagens/mecheCelular.svg" alt="crianças mechendo no suap">
+        </div>
+
+
+
+        <div class="login">
+            <h1>Login</h1>
+            <H2>Acesse ao Suap IFRN:</H2>
+
+            <form action="" method="post">
+
+                <input type="text" nome="usuario" id="usuario" placeholder="USUARIO:">
+
+                <input type="password" nome="senha" id="senha" placeholder="SENHA:">
+
+                <button type="button">Acessar</button>
+
+            </form>
+        </div>
+    </section>
+
+
+
+
 
 
 
@@ -19,4 +79,5 @@
 
 
 </body>
+
 </html>
