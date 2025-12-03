@@ -58,15 +58,74 @@
         font-weight: 100;
     }
 
+    .login p{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
     form {
-        margin-left: -40%;
+        align-items: center;
+        max-width: 50%;
     }
 
     input{
         width: 200%;
-        height: 30px;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
         
     }
+    label{
+        font-size: 12px;
+
+    }
+    .title{
+        padding-top: 2.3rem; 
+        font-family: 'Open Sans'; 
+        font-size: 40px !important; 
+        margin-bottom: -15px;
+        
+    }
+
+    button{
+        width: 80%;
+        height: 7%;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--ciano);
+        font-size: 15px;
+        margin: -10px 0 0 10%;
+        transform: translate(1);
+    
+    }
+
+    button:hover{
+        background-color: var(--cianoSombreado);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    .senha{
+        color: var(--ciano);
+        width: 100%;
+        text-align: right !important;
+        font-size: 13px !important;
+        margin-bottom: 6%;
+    }
+
+    .senha:hover{
+        color: var(--cianoSombreado);
+    }
+
+    .linha{
+        margin-left: 10%;
+        width: 80%;
+        height: 2px;
+        background: radial-gradient(circle,rgba(255, 255, 255, 0.082) 0%, rgba(109, 163, 155, 0.089) 50%, rgba(52, 99, 84, 0.075) 100%);
+    }
+
+
 </style>
 
 <body>
@@ -82,7 +141,7 @@
 
 
         <div class="login">
-            <p style="padding-top: 2.3rem; font-family: 'Open Sans'; font-size: 40px; margin-bottom: -15px;">Login</p>
+            <p class="title" >Login</p>
             <p>Acesse ao Suap IFRN:</p>
 
             <form action="" method="post">
@@ -95,10 +154,14 @@
                     <li><input type="password" nome="senha" id="senha"></li>
                 </ul>
 
-
-                <button type="button">Acessar</button>
-
             </form>
+
+            <button type="button">Acessar</button>
+
+            <p class="senha">Esqueceu ou deseja alterar sua senha?</p>
+
+            <div class="linha"></div>
+
         </div>
     </section>
 
